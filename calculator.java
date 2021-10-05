@@ -8,7 +8,7 @@ public class calculator {
         String str = input.next();
         if(str.equals("+")||str.equals("-")||str.equals("*")||str.equals("/")||str.equals("%")){
         System.out.print("Enter operands : ");
-           int a = input.nextInt();
+           int a = 150;
            int b = input.nextInt();
            System.out.print("Result : ");
            switch(str){

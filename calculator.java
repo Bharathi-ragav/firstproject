@@ -4,9 +4,9 @@ public class calculator {
         Scanner input = new Scanner(System.in);
 
         System.out.println("\tCalculator");
-        System.out.println("Enter operator for operation i.e +,-,*,/.");
+        System.out.println("Enter operator for operation i.e +,-,*,/,%.");
         String str = input.next();
-        if(str.equals("+")||str.equals("-")||str.equals("*")||str.equals("/")){
+        if(str.equals("+")||str.equals("-")||str.equals("*")||str.equals("/")||str.equals("%")){
         System.out.print("Enter operands : ");
            int a = input.nextInt();
            int b = input.nextInt();
@@ -23,7 +23,10 @@ public class calculator {
                           break;
                 case "/" : 
                           System.out.print(a/b);
-                          break;              
+                          break; 
+                case "%" : 
+                          System.out.print(a%b);
+                          break; 
            }
         }
         else System.out.println("Invalid Operator");
